@@ -168,6 +168,12 @@ h1, h2{
     margin:60px auto;
 }
 
+/*------------------------ABOUT-----------------------------*/
+.products-text{
+    margin: 20px auto;
+    padding:50px;
+}
+/*------------------------ABOUT-----------------------------*/
 
 /*------------------------PRODUCTS------------------------------*/
 .catagories{
@@ -177,11 +183,6 @@ h1, h2{
     align-items:center;
 }
 
-
-.products-text{
-    margin: 20px auto;
-    padding:50px;
-}
 .catagories div{
     position:relative;
 }
