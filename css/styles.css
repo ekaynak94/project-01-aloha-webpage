@@ -277,8 +277,10 @@ h1, h2{
     }
 }
 /*Tablet-Sized*/
-@media screen and (max-width:1240px) and (min-width:600px){
-    
+@media screen and (max-width:1240px){
+    .three , .four{
+        display:none;
+    }
 }
 /*Mobile-Sized*/
 @media screen and (max-width:600px){
@@ -312,7 +314,12 @@ h1, h2{
     .social-media-links{ 
         flex: 1 0 100%;
     }
-    .social-media-links ul li{
-        display:inline-block;
+    .social-media-links span{
+        display:none;
     }
+    .social-media-links ul li{
+        display: inline-block;
+        margin: 1em 0.5em;
+    }
+    
 }
