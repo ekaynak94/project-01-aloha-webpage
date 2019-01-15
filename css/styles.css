@@ -144,7 +144,7 @@ h1, h2{
     text-decoration: none;
     text-transform:uppercase;
 }
-.social-media-links a:hover, .main-nav ul li a:hover{
+.main-nav ul li a:hover{
     color:#b64036;
 }
 
@@ -263,6 +263,14 @@ h1, h2{
     color:white;
     text-decoration: none;
 }
+
+.social-media-links i:hover{
+    color:#b64036;
+}
+.social-media-links span{
+    padding:0 1em;
+}
+
 .light-text{
     color:#969696;
 }
