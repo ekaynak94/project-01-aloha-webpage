@@ -94,9 +94,7 @@
     margin: 0 auto;
     text-align:center;
 }
-.text-container{
-    max-width:70%;
-}
+
 
 body{
     font-size:16px;
@@ -175,15 +173,24 @@ h1, h2{
 }
 
 /*PRODUCTS*/
-#products{
+.products-boxes{
     display:flex;
-    flex-flow: row wrap;
+    flex-wrap:wrap;
+}
+.single-sized{
+    position:relative;
+    flex: 1 0 25%;
+}
+.double-sized{
+    position:relative;
+    flex: 1 0 50%;
+}
+.products-boxes img{
+    width:100%;
+    height:auto;
 }
 
-#products div{
-    position:relative;
-}
-#products span{
+.products-boxes span{
     color:white;
     text-transform: uppercase;
     font-size:30px;
