@@ -213,6 +213,11 @@ h1, h2{
     justify-content: center;
     align-items: center;
     flex: 1 0 25%;
+    max-width: 15em;
+}
+.items img{
+    width:100%;
+    height:auto;
 }
 .items span{
     line-height: 2em;
@@ -290,15 +295,7 @@ h1, h2{
     .three , .four{
         display:none;
     }
-
-    .items{
-        max-width: 40%;
-    }
-    .items img{
-        width:100%;
-        height:auto;
-    }
-  
+   
 }
 /*Mobile-Sized*/
 @media screen and (max-width:600px){
@@ -321,6 +318,10 @@ h1, h2{
         flex: 1 0 100%;
     }
 
+    /*Featured*/
+    .items{
+        max-width: 10em;
+    }
     /*Footer*/
     .footer{
         text-align:center;
