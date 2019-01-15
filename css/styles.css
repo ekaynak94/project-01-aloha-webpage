@@ -1,0 +1,286 @@
+    @font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-MediumItalic.eot');
+    src: url('fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-MediumItalic.woff') format('woff'),
+        url('fonts/Raleway-MediumItalic.ttf') format('truetype'),
+        url('fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Light.eot');
+    src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Light.woff') format('woff'),
+        url('fonts/Raleway-Light.ttf') format('truetype'),
+        url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Medium.eot');
+    src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Medium.woff') format('woff'),
+        url('fonts/Raleway-Medium.ttf') format('truetype'),
+        url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-LightItalic.eot');
+    src: url('fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-LightItalic.woff') format('woff'),
+        url('fonts/Raleway-LightItalic.ttf') format('truetype'),
+        url('fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Regular.eot');
+    src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Italic.eot');
+    src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Bold.eot');
+    src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*------------------------GENERAL------------------------------*/
+body{
+    font-size:16px;
+    font-family: "Raleway";
+    font-weight: lighter;
+    color:#2d2d2d;
+}
+
+h1, h2{
+    font-family:"Playfair Display";
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align:center;
+}
+.white-text{
+    color:white;
+    text-shadow: #d7d7d7;
+}
+/*------------------------GENERAL------------------------------*/
+
+/*------------------------HEADER------------------------------*/
+.main-page-header{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.logo{
+    flex: 1 0 20%;
+}
+.main-page-header img{
+    max-height:50px;
+}
+.cart{
+    flex: 1 0 20%;
+}
+.main-nav{
+    flex: 1 0 60%;
+
+}
+.main-nav ul{
+    list-style: none;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+.main-nav ul li{
+    
+    margin: 0 auto;
+    padding: 10px;
+}
+.main-nav ul li a{
+    color:#e2574c;
+    text-decoration: none;
+    text-transform:uppercase;
+}
+.social-media-links a:hover, .main-nav ul li a:hover{
+    color:#b64036;
+}
+
+/*------------------------HEADER------------------------------*/
+
+/*------------------------BANNER------------------------------*/
+
+.banner{
+    height:500px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../images/banner-girl.png) center top 60px no-repeat,url(../images/flower-bkgd.jpg) center;
+    background-size:auto 500px;
+}
+.banner h1,.banner h3{
+    margin:60px auto;
+}
+
+
+/*------------------------PRODUCTS------------------------------*/
+.catagories{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.products-text{
+    margin: 20px auto;
+    padding:50px;
+}
+.catagories div{
+    position:relative;
+}
+.catagories img{
+    height:300px;
+}
+.catagories span{
+    color:white;
+    text-transform: uppercase;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*------------------------PRODUCTS------------------------------*/
+
+/*------------------------BANNER------------------------------*/
+
+
+/*---------------------------NEWSLETTER---------------------------*/
+.newsletter{
+    height:300px;
+    background: url(../images/wave-bkgd.jpg) center bottom no-repeat;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-form input{
+    border-radius:1em;
+    border:none;
+} .sign-up-form button{
+    border-radius:1em;
+    border:round;
+    color:white;
+    background-color:#e2574c;
+}
+
+
+/*----------------------------NEWSLETTER--------------------------*/
+
+/*------------------------FOOTER------------------------------*/
+.main-page-footer{
+    text-align:left;
+    display:flex;
+    justify-content: space-between;
+    background-color:#242424;
+    align-items: center;
+ 
+}
+.main-page-footer div{
+    padding:20px 150px;
+}
+
+.social-media-links ul{
+    list-style: none;
+}
+.social-media-links i,.social-media-links a{
+    color:white;
+    text-decoration: none;
+}
+.light-text{
+    color:#969696;
+}
+.mail-adress{
+    text-decoration: underline;
+}
+
+/*------------------------FOOTER------------------------------*/
+
+
+/*DESING TEST
+div{
+    border: 1px solid red;
+    background-color:green;
+}*/
+
+@media screen and (max-width:480px){
+    body{border:10px solid red;}
+    .main-page-header{
+        align-items: flex-start;
+        flex-wrap:wrap;
+    }
+    .logo{
+        flex: 1 0 50%;
+        order:1;
+    }
+    .cart{
+        flex: 1 0 50%;
+        order:2;
+    }
+    .main-nav{
+        flex: 0 0 100%;
+        order:3;
+       
+    }
+   
+   
+}
