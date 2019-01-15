@@ -252,7 +252,7 @@ h1, h2{
     background-color:#242424;
     align-items: center;
     color:white;
- 
+    padding-top:2em;
 }
 
 .social-media-links ul{
@@ -267,4 +267,52 @@ h1, h2{
 }
 .mail-adress{
     text-decoration: underline;
+}
+
+/*MEDIA QUERIES*/
+/*Desktop-Sized*/
+@media screen and (min-width:1240px){
+    .text-container{
+        max-width:70%;
+    }
+}
+/*Tablet-Sized*/
+@media screen and (max-width:1240px) and (min-width:600px){
+    
+}
+/*Mobile-Sized*/
+@media screen and (max-width:600px){
+    /*Header*/
+    .header{
+        flex-wrap: wrap;
+    }
+    .main-nav{
+        order:1;
+        border-top:1px solid black;
+    }
+
+    /*Products*/
+    .single-sized{
+        position:relative;
+        flex: 1 0 50%;
+    }
+    .double-sized{
+        position:relative;
+        flex: 1 0 100%;
+    }
+
+    /*Footer*/
+    .footer{
+        text-align:center;
+        flex-wrap: wrap;
+    }
+    .info{
+        flex: 1 0 100%;
+        margin-bottom:2em;}
+    .social-media-links{ 
+        flex: 1 0 100%;
+    }
+    .social-media-links ul li{
+        display:inline-block;
+    }
 }
