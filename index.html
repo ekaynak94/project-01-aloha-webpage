@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="main-page-header container">
+    <header class="header container">
         <div class="logo">
             <img src="images/aloha-logo.svg">
         </div>
@@ -26,21 +26,20 @@
             <img src="images/cart-icon.svg">
         </div>
     </header>
-    <section class="banner">
-        <div class="white-text container">
-            <h3 class="collection">New Collection </h3>
-            <h1 class="season"> Spring/Summer 2019</h1>
+    <section class="banner container">
+        <div class="banner-text text-container">
+            <h3>New Collection </h3>
+            <h1> Spring/Summer 2019</h1>
         </div>
     </section>
-    <section class="about container">
-        <div class="products-text">
+    <section class="container" id="about">
+        <div class="about-text text-container">
             <h2><em>Hand-Crafted </em><strong>Styles</strong></h2>
             <span>Aloha Apparel Co. sells only the finest ready-to-travel clothing.Browse our current selection of
                 products or sign-up for updates below.</span>
         </div>
     </section>
-    <section class="products container">
-
+    <section class="container" id="products">
         <div class="catagories">
             <div><img src="images/mens-category.jpg"><span> Men's</span></div>
             <div><img src="images/trends-category.jpg"> <span>Trends</span></div>
@@ -50,45 +49,48 @@
             <div><img src="images/womens-category.jpg"> <span>Women's</span></div>
         </div>
     </section>
-    <section class="featured container">
+    <section class="container" id="featured">
         <h2><em>Most-Loved</em><strong>Products</strong></h2>
-        <ul>
-            <li><img src="images/checked-stretch-dress.jpg" alt="checked strech dress">
-                <span class="product-type">Dresses </span>
-                <span class="product-name">Checked Strech Dress</span>
-                <span class="product-price">&dollar; 129.00</span>
-            </li>
-            <li><img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
-                <span class="product-name">Bags </span>
-                <span class="product-type">Blue Hipster Backpack</span>
-                <span class="product-price">&dollar; 69.00</span>
-            </li>
-            <li><img src="images/demin-overall-shorts.jpg" alt="demin overall shorts">
-                <span class="product-name">Demin </span>
-                <span class="product-type">Demin Overall Shorts</span>
-                <span class="product-price">&dollar; 89.00</span>
-            </li>
-            <li><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
-                <span class="product-name">Dresses</span>
-                <span class="product-type">Pink Dotted Dress</span>
-                <span class="product-price">&dollar; $9.00</span>
-            </li>
-        </ul>
+        <div class="items 1">
+            <img src="images/checked-stretch-dress.jpg" alt="checked strech dress">
+            <span class="product-type">Dresses </span>
+            <span class="product-name">Checked Strech Dress</span>
+            <span class="product-price">&dollar; 129.00</span>
+        </div>
+        <div class="items 2">
+            <img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
+            <span class="product-name">Bags </span>
+            <span class="product-type">Blue Hipster Backpack</span>
+            <span class="product-price">&dollar; 69.00</span>
+        </div>
+        <div class="items 3">
+            <img src="images/demin-overall-shorts.jpg" alt="demin overall shorts">
+            <span class="product-name">Denim </span>
+            <span class="product-type">Denim Overall Shorts</span>
+            <span class="product-price">&dollar; 89.00</span>
+        </div>
+        <div class="items 4">
+            <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
+            <span class="product-name">Dresses</span>
+            <span class="product-type">Pink Dotted Dress</span>
+            <span class="product-price">&dollar; $9.00</span>
+        </div>
     </section>
 
-    <section class="newsletter container">
-        <div class="white-text">
+    <section class="container" id="newsletter">
+        <div class="newsletter-text text-container">
             <h2><em>Sign-up for</em><strong> Updates</strong></h2>
-            <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free
-                style tips from our blog.Unsubscribe any time.</p>
-
-            <form class="sign-up-form">
+            <span>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free
+                style tips from our blog.Unsubscribe any time.</span>
+        </div>
+        <div class="sign-up-form">
+            <form>
                 <input type="text" placeholder="Your E-mail" name="first_name" />
                 <button class="sub-button">Subscribe</button>
             </form>
         </div>
     </section>
-    <footer class="main-page-footer white-text container">
+    <footer class="footer container">
         <div class="info">
             <span>&copy; 2016 Aloha Apparel Co.<br> Powered by HTML and CSS.</span><br>
             <span> 604-604-6040. </span><span class="mail-adress">@alohapparel.com</span><br>
