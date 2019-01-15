@@ -175,6 +175,45 @@ h1, h2{
 }
 
 /*PRODUCTS*/
+#products{
+    display:flex;
+    flex-flow: row wrap;
+}
+
+#products div{
+    position:relative;
+}
+#products span{
+    color:white;
+    text-transform: uppercase;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*FEATURED*/
+.featured-list{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.items{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.items span{
+    line-height: 2em;
+}
+.product-name{
+    font-size: 18px;
+    font-weight: bold;
+    color:#e2574c;
+}
 
 /*NEWSLETTER*/
 
@@ -222,176 +261,3 @@ h1, h2{
 .mail-adress{
     text-decoration: underline;
 }
-
-
-
-/* OLD CSS
-body{
-    font-size:16px;
-    font-family: "Raleway";
-    font-weight: lighter;
-    color:#2d2d2d;
-}
-
-h1, h2{
-    font-family:"Playfair Display";
-}
-/
-.container{
-    max-width: 1240px;
-    margin: 0 auto;
-    text-align:center;
-}
-.white-text{
-    color:white;
-    text-shadow: #d7d7d7;
-}
-/
-.main-page-header{
-    display:flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-.logo{
-    flex: 1 0 20%;
-}
-.main-page-header img{
-    max-height:50px;
-}
-.cart{
-    flex: 1 0 20%;
-}
-.main-nav{
-    flex: 1 0 60%;
-
-}
-.main-nav ul{
-    list-style: none;
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center
-}
-.main-nav ul li{
-    
-    margin: 0 auto;
-    padding: 10px;
-}
-.main-nav ul li a{
-    color:#e2574c;
-    text-decoration: none;
-    text-transform:uppercase;
-}
-.social-media-links a:hover, .main-nav ul li a:hover{
-    color:#b64036;
-}
-.banner{
-    height:500px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    margin: 10px auto;
-    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../images/banner-girl.png) center top 60px no-repeat,url(../images/flower-bkgd.jpg) center;
-    background-size:auto 500px;
-}
-.banner h1,.banner h3{
-    margin:60px auto;
-}
-
-.about-text{
-    margin: 20px auto;
-    padding:50px;
-}
-
-.catagories{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:center;
-}
-
-.catagories div{
-    position:relative;
-}
-.catagories img{
-    height:300px;
-}
-.catagories span{
-    color:white;
-    text-transform: uppercase;
-    font-size:30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.newsletter{
-    height:300px;
-    background: url(../images/wave-bkgd.jpg) center bottom no-repeat;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sign-up-form input{
-    border-radius:1em;
-    border:none;
-} .sign-up-form button{
-    border-radius:1em;
-    border:round;
-    color:white;
-    background-color:#e2574c;
-}
-
-.main-page-footer{
-    text-align:left;
-    display:flex;
-    justify-content: space-between;
-    background-color:#242424;
-    align-items: center;
- 
-}
-.main-page-footer div{
-    padding:20px 150px;
-}
-
-.social-media-links ul{
-    list-style: none;
-}
-.social-media-links i,.social-media-links a{
-    color:white;
-    text-decoration: none;
-}
-.light-text{
-    color:#969696;
-}
-.mail-adress{
-    text-decoration: underline;
-}
-
-@media screen and (max-width:480px){
-    body{border:10px solid red;}
-    .main-page-header{
-        align-items: flex-start;
-        flex-wrap:wrap;
-    }
-    .logo{
-        flex: 1 0 50%;
-        order:1;
-    }
-    .cart{
-        flex: 1 0 50%;
-        order:2;
-    }
-    .main-nav{
-        flex: 0 0 100%;
-        order:3;
-       
-    }
-   
-
-}*/
