@@ -263,6 +263,7 @@ li {
   min-width: 25px;
   text-align: center;
 }
+
 /*Media Queries*/
 /*Tablet-Sized*/
 @media screen and (max-width: 1240px) {

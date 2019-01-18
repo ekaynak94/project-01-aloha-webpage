@@ -1,9 +1,21 @@
 
 
 $(function() {
+//  smooth scrolling source @ https://css-tricks.com/snippets/jquery/smooth-scrolling/
+$('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+        $('html, body').animate({
+        scrollTop: target.offset().top
+        }, 1000);
+        return false;
+    }
+    }
+    });
 
 $('.featured-list').flickity({
-    // options
     cellAlign: 'center',
     contain: true
     });
@@ -19,6 +31,7 @@ $('.featured-list').flickity({
     $("input[name='first_name']").val()="";
   });
 });
+
 function checkMailValidity(text){
     if(text.indexOf("@")>=0){
         return true;
