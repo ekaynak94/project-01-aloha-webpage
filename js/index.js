@@ -1,10 +1,13 @@
+
+
+$(function() {
+
 $('.featured-list').flickity({
     // options
     cellAlign: 'center',
     contain: true
-  });
-
-$(function() {
+    });
+    
   $(".sign-up-form").on("click", ".sub-button", function() {
     const text = $("input[name='first_name']").val();
     

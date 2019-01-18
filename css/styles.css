@@ -104,6 +104,8 @@ body {
 h1,
 h2 {
   font-family: "Playfair Display";
+  font-size: 2em;
+  margin: 1.2em auto;
 }
 .container {
   max-width: 1240px;
@@ -149,6 +151,7 @@ li {
 .nav-bar ul {
   padding-left: 0;
   text-transform: uppercase;
+  margin: 1em auto;
 }
 .page-header {
   display: flex;
@@ -159,6 +162,7 @@ li {
 .page-header div img {
   height: 50px;
   width: auto;
+  margin: 1em auto;
 }
 .logo {
   flex: 0 1 20%;
@@ -186,6 +190,7 @@ li {
   background-size: auto 400px;
 }
 .banner h1 {
+  text-transform: none;
   font-size: 2.5em;
 }
 
@@ -246,21 +251,27 @@ li {
 /*Footer*/
 .page-footer {
   background-color: #242424;
+  padding: 2em 2em;
 }
 .page-footer .container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   text-align: left;
-  padding: 0 2em;
 }
-
+.fab {
+  min-width: 25px;
+  text-align: center;
+}
 /*Media Queries*/
 /*Tablet-Sized*/
 @media screen and (max-width: 1240px) {
 }
 /*Mobile-Sized*/
 @media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
   /*Header*/
   .page-header {
     flex-wrap: wrap;
@@ -295,6 +306,7 @@ li {
   }
   .social-media-links ul {
     padding-left: 0;
+    min-width: 200px;
   }
   .social-media-links span {
     display: none;
