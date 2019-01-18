@@ -21,20 +21,18 @@ $('.featured-list').flickity({
     });
     
   $(".sign-up-form").on("click", ".sub-button", function() {
-    const text = $("input[name='first_name']").val();
-    
-    if( checkMailValidity(text)===true){
-        alert("Thank you for subscrıbıng! Your Mail Address is:"+ text);
+    const text = $("input[name='email_address']").val();
+    if( checkEmailValidity(text)===true){
+        alert("Thank you for subscrıbıng!");
     }else{
         alert("Not a valid email address!");
     }
-    $("input[name='first_name']").val()="";
+    $("input[name='email_address']").val()="";
   });
 });
 
-function checkMailValidity(text){
-    if(text.indexOf("@")>=0){
-        return true;
-    }
-    return false;
+// email validity checker source @https://stackoverflow.com/a/2507043
+function checkEmailValidity(email){
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
 }
