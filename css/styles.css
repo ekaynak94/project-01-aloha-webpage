@@ -237,7 +237,7 @@ li {
 .newsletter {
   height: 350px;
   background: url(../images/wave-bkgd.jpg) center bottom no-repeat;
-  background-color:#d7d7d7;
+  background-color: #d7d7d7;
   margin: 50px auto 10px auto;
   display: flex;
   flex-flow: column nowrap;
@@ -300,6 +300,10 @@ li {
 @media screen and (max-width: 600px) {
   body {
     font-size: 14px;
+  }
+  container {
+    padding-right: 1em;
+    padding-left: 1em;
   }
   /*Header*/
   .page-header {
