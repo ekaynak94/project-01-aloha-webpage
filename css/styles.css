@@ -179,7 +179,7 @@ li {
 /*Banner*/
 
 .banner {
-  height: 400px;
+  height: 600px;
   text-transform: uppercase;
   text-align: center;
   display: flex;
@@ -189,7 +189,7 @@ li {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../images/banner-girl.png) center top 60px no-repeat,
     url(../images/flower-bkgd.jpg) center;
-  background-size: auto 400px;
+  background-size: auto 600px;
 }
 .banner h1 {
   text-transform: none;
@@ -215,7 +215,6 @@ li {
   position: relative;
   flex: 1 0 50%;
 }
-
 .products span {
   text-transform: uppercase;
   font-size: 2em;
@@ -291,6 +290,10 @@ li {
 /*Media Queries*/
 /*Tablet-Sized*/
 @media screen and (max-width: 1240px) {
+  .banner {
+    height: 400px;
+    background-size: auto 400px;
+  }
 }
 /*Mobile-Sized*/
 @media screen and (max-width: 600px) {
