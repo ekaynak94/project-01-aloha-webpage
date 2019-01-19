@@ -202,18 +202,21 @@ li {
   display: flex;
   flex-wrap: wrap;
 }
-
-.products img {
-  width: 100%;
-  height: auto;
-}
-.single-sized {
+.catagory {
+  box-sizing: border-box;
+  border: 2px solid white;
+  padding-top: 25%;
   position: relative;
+}
+.mens,
+.womens {
+  flex: 2 0 50%;
+}
+.glasses,
+.trends,
+.sale,
+.bags {
   flex: 1 0 25%;
-}
-.double-sized {
-  position: relative;
-  flex: 1 0 50%;
 }
 .products span {
   text-transform: uppercase;
@@ -222,6 +225,30 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.mens {
+  background: url(../images/mens-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
+}
+.glasses {
+  background: url(../images/glasses-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
+}
+.trends {
+  background: url(../images/trends-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
+}
+.sale {
+  background: url(../images/sale-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
+}
+.bags {
+  background: url(../images/bags-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
+}
+.womens {
+  background: url(../images/womens-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 
 /*Featured*/
@@ -315,13 +342,18 @@ li {
     min-width: 100%;
   }
   /*Products*/
-  .single-sized {
-    position: relative;
+  .mens,
+  .womens {
+    flex: 2 0 100%;
+  }
+  .glasses,
+  .trends,
+  .sale,
+  .bags {
     flex: 1 0 50%;
   }
-  .double-sized {
-    position: relative;
-    flex: 1 0 100%;
+  .catagory {
+    padding-top: 50%;
   }
 
   /*Footer*/
