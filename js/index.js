@@ -8,7 +8,7 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
     if (target.length) {
         $('html, body').animate({
-        scrollTop: target.offset().top
+        scrollTop: target.offset().top-offSet()
         }, 1000);
         return false;
     }
@@ -50,4 +50,13 @@ $('.featured-list').flickity({
 function checkEmailValidity(email){
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
+}
+
+//Determines the offset for the scroll depending on the screen size
+function offSet(){
+    if($(window).width() < 600){
+        return 150;
+    }else{
+        return 100;
+    }
 }
