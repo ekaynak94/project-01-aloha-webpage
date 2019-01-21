@@ -14,12 +14,12 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     }
     }
     });
-
+//Featured Items
 $('.featured-list').flickity({
     cellAlign: 'center',
     contain: true
     });
-    
+//Subscription form
   $(".sign-up-form").on("click", ".sub-button", function() {
     const text = $("input[name='email_address']").val();
     if( checkEmailValidity(text)===true){
@@ -28,6 +28,21 @@ $('.featured-list').flickity({
         alert("Not a valid email address!");
     }
     $("input[name='email_address']").val()="";
+  });
+  //Cart Icon stretch goal 
+  let cartItems=0;
+  $(".featured-list").on("click", ".cart-button", function() {
+    cartItems++;
+    if(cartItems===1){
+        $(".cart").append("<button class='cart-icon'>"+cartItems+"</button>");
+    }else{
+        $(".cart").children("button").html( cartItems);
+    }
+  });
+  //The code below empties the cart after clicking on the button that is on top of cart logo
+  $(".header").on("click", ".cart-icon", function() {
+      cartItems=0;
+    $(".cart").children("button").remove();
   });
 });
 

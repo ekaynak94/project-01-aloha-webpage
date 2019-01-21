@@ -144,7 +144,22 @@ a:hover {
 li {
   list-style: none;
 }
+
 /*Header*/
+.header {
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+}
+.page-header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .nav-bar ul li {
   display: inline-block;
   margin: 0.5em 0.5em;
@@ -153,12 +168,6 @@ li {
   padding-left: 0;
   text-transform: uppercase;
   margin: 1em auto;
-}
-.page-header {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
 }
 .page-header div img {
   height: 50px;
@@ -170,14 +179,27 @@ li {
 }
 .cart {
   flex: 0 1 20%;
+  position: relative;
 }
 .nav-bar {
   flex: 0 1 60%;
+}
+/*The icon that gets added on top of the cart logo, once items are added to the cart*/
+.cart-icon {
+  border-radius: 50%;
+  top: 50%;
+  right: 50%;
+  transform: translate(+150%, -150%);
+  position: absolute;
+  border: none;
+  color: white;
+  background-color: #e2574c;
 }
 
 /*Banner*/
 
 .banner {
+  margin-top: 90px;
   height: 600px;
   text-transform: uppercase;
   text-align: center;
@@ -225,6 +247,7 @@ li {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .mens {
   background: url(../images/mens-category.jpg) no-repeat 50%;
   background-size: cover, cover;
@@ -258,6 +281,14 @@ li {
   font-family: "Playfair Display";
   font-size: 1.3em;
 }
+.cart-button {
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: black;
+  height: 2em;
+  width: 7em;
+}
 
 /*Newsletter*/
 .newsletter {
@@ -284,7 +315,7 @@ li {
   position: relative;
   width: 360px;
 }
-.sign-up-form button {
+.sub-button {
   position: absolute;
   z-index: 1;
   height: 80%;
@@ -339,6 +370,10 @@ li {
     order: 1;
     border-top: 1px solid black;
     min-width: 100%;
+  }
+  /*Banner*/
+  .banner {
+    margin-top: 150px;
   }
   /*Products*/
   .mens,

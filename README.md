@@ -6,3 +6,5 @@ This is a project to showcase HTML and CSS to build a responsive website as part
 - CSS
 - Responsive web design
 - Git
+- Javascript
+- jQuery
