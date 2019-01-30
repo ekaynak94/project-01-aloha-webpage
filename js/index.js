@@ -1,6 +1,9 @@
 
 
 $(function() {
+    $("a[href^='#']").not("a[href='#']").click(function() {
+        $("#"+$(this).attr("href").slice(1)+"").focus();
+     });
 //  smooth scrolling source @ https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

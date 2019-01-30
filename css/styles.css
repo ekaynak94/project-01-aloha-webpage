@@ -344,7 +344,25 @@ li {
   min-width: 25px;
   text-align: center;
 }
-
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
+}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+#main[tabindex="-1"]:focus {
+  outline: 0;
+}
 /*Media Queries*/
 /*Tablet-Sized*/
 @media screen and (max-width: 1240px) {
@@ -358,7 +376,7 @@ li {
   body {
     font-size: 14px;
   }
-  container {
+  .container {
     padding-right: 1em;
     padding-left: 1em;
   }

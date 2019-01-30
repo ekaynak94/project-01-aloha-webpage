@@ -15,8 +15,9 @@
     <title>Aloha Apparel Co.</title>
   </head>
   <body>
-    <header class="header">
-        <div class="page-header container">
+    <a class="screen-reader-text" href="#main">Skip to content</a>
+    <header class="header">    
+      <div class="page-header container">
       <div class="logo"><img src="images/aloha-logo.svg" /></div>
       <nav class="nav-bar">
         <ul>
@@ -33,6 +34,7 @@
       <p>New Collection</p>
       <h1>Spring/Summer 2019</h1>
     </section>
+    <main id="main" class="site-main" tabindex="-1">
     <section id="about" class="about container text-container">
       <h2><space class="italic-title">Hand-Crafted&nbsp;</span><span class="strong-title">Styles</span></h2>
       <p>
@@ -122,6 +124,7 @@
             </form>
         </div>         
     </section>
+</main>
     <footer class="page-footer white-text">
         <div class=container>
             <div class="company-info">
@@ -141,8 +144,8 @@
         </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="plug-ins/tota11y-0.1.6/build/tota11y.min.js"></script>
     <script src="plug-ins/flickity.pkgd.min.js"></script>
     <script src="js/index.js"></script>
-    
   </body>
 </html>
