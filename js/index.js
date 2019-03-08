@@ -43,7 +43,7 @@ $('.featured-list').flickity({
     }
   });
   //The code below empties the cart after clicking on the button that is on top of cart logo
-  $(".header").on("click", ".cart-icon", function() {
+  $(".header").on("click", ".cart-indicator", function() {
       cartItems=0;
     $(".cart").children("button").remove();
   });
