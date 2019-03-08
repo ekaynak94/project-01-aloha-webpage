@@ -36,16 +36,17 @@ $('.featured-list').flickity({
   let cartItems=0;
   $(".featured-list").on("click", ".cart-button", function() {
     cartItems++;
+    const cart=$(".cart");
     if(cartItems===1){
-        $(".cart").append("<button class='cart-indicator'>"+cartItems+"</button>");
+        cart.append("<button class='cart-indicator'>"+cartItems+"</button>");
     }else{
-        $(".cart").children("button").html( cartItems);
+        cart.children("button").html( cartItems);
     }
   });
   //The code below empties the cart after clicking on the button that is on top of cart logo
   $(".header").on("click", ".cart-indicator", function() {
       cartItems=0;
-    $(".cart").children("button").remove();
+    cart.children("button").remove();
   });
 });
 
