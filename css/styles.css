@@ -432,7 +432,21 @@ li {
   .catagory {
     padding-top: 50%;
   }
-
+  /*Newsletter*/
+  .newsletter-text {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  .newsletter-text h2 {
+    margin-top: 0;
+  }
+  .newsletter-text h2 .strong-title {
+    display: block;
+    margin-top: 0.2em;
+  }
+  .sign-up-form {
+    width: 240px;
+  }
   /*Footer*/
   .page-footer .container {
     text-align: center;
