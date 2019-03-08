@@ -37,7 +37,7 @@ $('.featured-list').flickity({
   $(".featured-list").on("click", ".cart-button", function() {
     cartItems++;
     if(cartItems===1){
-        $(".cart").append("<button class='cart-icon'>"+cartItems+"</button>");
+        $(".cart").append("<button class='cart-indicator'>"+cartItems+"</button>");
     }else{
         $(".cart").children("button").html( cartItems);
     }

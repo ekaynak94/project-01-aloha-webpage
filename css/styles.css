@@ -195,7 +195,7 @@ li {
   flex: 0 1 60%;
 }
 /*The icon that gets added on top of the cart logo, once items are added to the cart*/
-.cart-icon {
+.cart-indicator {
   border-radius: 50%;
   top: 0;
   right: 10%;
@@ -383,7 +383,7 @@ li {
   .page-header div img {
     margin: 0 0.5em;
   }
-  .cart-icon {
+  .cart-indicator {
     right: 35px;
   }
 }
@@ -405,7 +405,7 @@ li {
     top: 0;
     margin: 0.5em;
   }
-  .cart-icon {
+  .cart-indicator {
     right: 50%;
     top: 50%;
   }
