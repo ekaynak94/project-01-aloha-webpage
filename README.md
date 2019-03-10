@@ -27,10 +27,10 @@ https://ekaynak94.github.io/project-01-aloha-webpage/
 - Responsive Webdesign
 - Semantical HTML markup usage
 - CSS:
-  Page Styling
-  Media Queries
-  Font Faces
-  Flexboxes
+  - Page Styling
+  - Media Queries
+  - Font Faces
+  - Flexboxes
 - Fontawesome icons
 - Google Fonts
 - Coding in Javascript and using Jquery
