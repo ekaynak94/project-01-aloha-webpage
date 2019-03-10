@@ -37,6 +37,6 @@ https://ekaynak94.github.io/project-01-aloha-webpage/
 - Usage of Plugins(Flickity)
 - Usage of Git/Github
 
-##Personal Experience
+## Personal Experience
 
 - This was the first Website I have built as a part of the RED Academy Web Developer Professional Program. We had been provided with the screenshots of the webpage and how the design looks on different window sizes, as well as the image files used on the page to start off the project. I have learned a great deal about how to develop a simple responsive web page, how to style it and how to add functionalities to the page with javascript.
