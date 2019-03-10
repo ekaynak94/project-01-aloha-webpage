@@ -8,9 +8,15 @@ https://ekaynak94.github.io/project-01-aloha-webpage/
 
 ## Screenshots
 
+### Site Banner
+
 ![Aloha Website Screenshot1](./screenshots/Screenshot_1.png "Site Banner")
 
+### Site Products Section
+
 ![Aloha Website Screenshot2](./screenshots/Screenshot_2.png "Site Products Section")
+
+### Mobile View
 
 ![Aloha Website Screenshot3](./screenshots/Screenshot_3.png "Mobile View")
 
