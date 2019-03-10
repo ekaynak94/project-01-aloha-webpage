@@ -8,9 +8,11 @@ https://ekaynak94.github.io/project-01-aloha-webpage/
 
 ## Screenshots
 
-![Aloha Website Screenshot1](./screenshots/Screenshot_1.png)
-![Aloha Website Screenshot2](./screenshots/Screenshot_2.png)
-![Aloha Website Screenshot3](./screenshots/Screenshot_3.png)
+![Aloha Website Screenshot1](./screenshots/Screenshot_1.png "Site Banner")
+
+![Aloha Website Screenshot2](./screenshots/Screenshot_2.png "Site Products Section")
+
+![Aloha Website Screenshot3](./screenshots/Screenshot_3.png "Mobile View")
 
 ## Skills Learned
 
